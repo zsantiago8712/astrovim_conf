@@ -32,9 +32,22 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    --
+    ["<Tab>"] = {
+      function() require("astronvim.utils.buffer").nav(1) end,
+      desc = "Next buffer",
+    },
+    ["<S-Tab>"] = {
+      function() require("astronvim.utils.buffer").nav(-1) end,
+      desc = "Previous buffer",
+    },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
 }
+
+-- Mapping data with "desc" stored in a separate table.
+
+--

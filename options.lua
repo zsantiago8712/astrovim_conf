@@ -2,8 +2,10 @@
 return {
   opt = {
     -- set to true or false etc.
+    tabstop = 4, -- number of space in a tab
+    shiftwidth = 4, -- number of space inserted for indentation
     relativenumber = true, -- sets vim.opt.relativenumber
-    number = true, -- sets vim.opt.number
+    number = true, -- strueets vim.opt.number
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
@@ -27,4 +29,5 @@ return {
 --   local_vim.opt.shortmess = vim.opt.shortmess + { I = true } -- add to option list
 --
 --   return local_vim
--- end
+-- end        and return the vim object
+--
